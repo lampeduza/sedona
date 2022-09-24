@@ -1,0 +1,39 @@
+.view-mode {
+	@include reset-list;
+	display: flex;
+	user-select: none;
+}
+
+.view-mode__item {
+	margin-right: 8px;
+
+	&:nth-child(3n) {
+		margin-right: 0;
+	}
+
+	&--applied {
+		.view-mode__button {
+			border-color: $color-black;
+		}
+	}
+}
+
+.view-mode__button {
+	display: flex;
+	padding: 15px 14px;
+	border: 2px solid $form-element-color-1;
+	border-radius: 4px;
+	cursor: pointer;
+
+	&:hover {
+		border: 2px solid $color-black;
+	}
+
+	&:focus {
+		border: 2px solid #68A2CA;
+	}
+
+	&:active {
+		border: 2px solid $color-black;
+	}
+}

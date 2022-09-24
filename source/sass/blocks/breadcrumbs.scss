@@ -1,0 +1,51 @@
+.breadcrumbs {
+	margin-bottom: 40px;
+}
+
+.breadcrumbs__list {
+	@include reset-list;
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 500px;
+	user-select: none;
+}
+
+.breadcrumbs__item {
+	display: flex;
+	align-items: center;
+
+	&:not(:last-child) {
+		padding-right: 19px;
+		margin-right: 11px;
+		position: relative;
+
+		&::before {
+			content: '';
+			width: 7px;
+			height: 10px;
+			position: absolute;
+			top: 50%;
+			right: 0;
+			transform: translateY(-50%);
+			background-image: url('../img/icons/arrow-right.svg');
+		}
+	}
+}
+
+
+.breadcrumbs__link {
+	display: flex;
+	color: $color-white;
+
+	&:hover {
+		color: rgba(255, 255, 255, 0.6);
+	}
+
+	&:active {
+		color: $color-white;
+	}
+
+	&:focus {
+		color: rgba(255, 255, 255, 0.3);
+	}
+}

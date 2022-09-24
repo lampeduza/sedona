@@ -1,0 +1,76 @@
+.filter {
+	padding-top: 35px;
+	padding-bottom: 70px;
+	// background-color: ;
+	background-image: url('../img/desktop/filter-background.jpg');
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: cover, contain;
+	min-height: 412px;
+
+	@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url('../img/desktop/filter-background@2x.webp')
+	}
+}
+
+.filter__title {
+	@include h1;
+	color: $color-white;
+	margin: 0;
+	margin-bottom: 8px;
+}
+
+.filter__list {
+	@include reset-list;
+	display: flex;
+	align-items: flex-start;
+	user-select: none;
+}
+
+.filter__item {
+	margin-right: 70px;
+
+	&--infrastructure,
+	&--price {
+		width: max-content;
+	}
+
+	&--price {
+		width: 288px;
+		margin-left: auto;
+	}
+
+	&--buttons {
+		width: 191px;
+		margin-top: 56px;
+	}
+
+	&:nth-child(2n) {
+		margin-right: 0;
+	}
+}
+
+.filter__button {
+	@include smallButton;
+	text-transform: uppercase;
+	color: $color-white;
+	padding: 8px;
+	border: 3px solid transparent;
+	margin-bottom: 40px;
+	min-width: 100%;
+	cursor: pointer;
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+
+	&--apply {
+		background-color: #2a4467;
+		@include findStates;
+	}
+
+	&--reset {
+		background-color: transparent;
+		@include resetState;
+	}
+}

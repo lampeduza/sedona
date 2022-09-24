@@ -1,0 +1,31 @@
+$color-white: #ffffff;
+$color-white-transparent: rgba(255, 255, 255, 0.3);
+$color-black: #000000;
+$color-black-transparent: rgba(0, 0, 0, 0.3);
+$color-additional: #82b3d3;
+
+// text colors
+$color-text-white-transparent: rgba(255, 255, 255, 0.3);
+$color-text-error: #ff5757;
+$color-text-additional: #333333;
+
+
+// button colors
+$button-color-basic: #756157;
+$button-color-selected: #7db54f;
+
+// background colors
+$background-color-additional-1: rgba(131, 179, 211, 0.12);
+$background-color-additional-2: rgba(131, 179, 211, 0.2);
+
+// icon colors
+$icon-color-green: #7db54f;
+
+// form colors
+$form-input-color: #3f5e72;
+$form-element-color-1: #e5e5e5;
+$form-element-color-2: #f2f2f2;
+
+/* retina */
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

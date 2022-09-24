@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Седона - небольшой городок в Аризоне, заслуживающий большего!">
+    <title>Седона | Главная страница</title>
+    <link rel="apple-touch-icon" href="img/favicon/favicon.png">
+    <link rel="icon" type="Image/x-icon" href="img/favicon/favicon.png">
+    <link rel="preload" href="fonts/ptsans-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/ptsans-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header container">
+      <!-- logo -->
+      <a class="header__link" href="index.html">
+        <picture class="header__picture">
+          <source type="image/webp" srcset="img/desktop/logo.webp 1x, img/desktop/logo@2x.webp 2x">
+          <img class="header__logo" src="img/desktop/logo.png" srcset="img/desktop/logo@2x.png" width="140" height="70" alt="Логотип сайта">
+        </picture>
+      </a> <!-- end logo -->
+
+      <!-- navigation -->
+      <nav class="header__navigation navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item navigation__item--active">
+            <a class="navigation__link" href="#">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">О Седоне</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+      </nav> <!-- end navigation -->
+
+      <!-- user panel -->
+      <ul class="header__user-panel user-panel">
+        <li class="user-panel__item">
+          <a class="user-panel__link" href="#">
+            <svg width="20" height="20" role="img" aria-label="Иконка поиска. Производит поиск по сайту потенциальных мест для посещения">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="user-panel__item user-panel__item--favorite">
+          <a class="user-panel__link" href="#">
+            <svg width="20" height="20" role="img" aria-label="Иконка избранных мест. Отражает количество отмеченных мест, отложенных для посещения">
+              <use xlink:href="img/sprite.svg#heart"></use>
+            </svg>
+          </a>
+        </li>
+      </ul> <!-- end user panel -->
+
+      <!-- header button -->
+      <a class="header__button" href="#">Хочу сюда!</a> <!-- end header button -->
+    </header>
+
+    <!-- main -->
+    <main class="main">
+      
+      <!-- promo -->
+      <section class="promo">
+        <div class="promo__content">
+          <h1 class="promo__title">Седона&nbsp;&mdash; небольшой городок в&nbsp;Аризоне, заслуживающий большего!</h1>
+          <p class="promo__text">Рассмотрим причины, по&nbsp;которым Седона круче, чем Гранд-Каньон!</p>
+        </div>
+      </section> <!-- end promo -->
+
+      <!-- advantages -->
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества</h2>
+
+        <!-- advantages place -->
+        <article class="advantages__place place">
+          <!-- place content -->
+          <div class="place__content">
+            <h3 class="place__title">Настоящий городок</h3>
+            <p class="place__text">Седона&nbsp;&mdash; не&nbsp;аттракцион для туристов, там течёт своя жизнь</p>
+          </div> <!-- end place content -->
+
+          <!-- place picture -->
+          <picture class="place__picture">
+            <source type="image/webp" srcset="img/desktop/photo-1.webp 1x, img/desktop/photo-1@2x.webp 2x">
+            <img class="place__image" src="img/desktop/photo-1.jpg" srcset="img/desktop/photo-1@2x.jpg" width="800" height="383" alt="Какое - то описание">
+          </picture>
+        </article> <!-- end advantages place -->
+
+        <!-- advantages list -->
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <h3 class="advantages__title">Небольшая площадь</h3>
+            <p class="advantages__text">Все достопримечательности находятся очень близко</p>
+          </li>
+          <li class="advantages__item advantages__item--unique">
+            <h3 class="advantages__title">Красивая дорога</h3>
+            <p class="advantages__text">Ехать в&nbsp;Седону из&nbsp;Лас-Вегаса совсем не&nbsp;скучно!</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title">Мало туристов</h3>
+            <p class="advantages__text">Большинство едет в&nbsp;Гранд Каньон и&nbsp;толпится там</p>
+          </li>
+        </ul> <!-- end advantages list -->
+
+        <!-- advantages place -->
+        <article class="advantages__place place place--reverse">
+          <!-- place content -->
+          <div class="place__content">
+            <h3 class="place__title">Там есть мост дьявола</h3>
+            <p class="place__text">Да, по&nbsp;нему можно пройти! Если вы&nbsp;осмелитесь, разумеется</p>
+          </div> <!-- end place content -->
+
+          <!-- place picture -->
+          <picture class="place__picture">
+            <source type="image/webp" srcset="img/desktop/photo-2.webp 1x, img/desktop/photo-2@2x.webp 2x">
+            <img class="place__image" src="img/desktop/photo-2.jpg" srcset="img/desktop/photo-2@2x.jpg" width="800" height="384" alt="Прекрасный вид скал, окружения">
+          </picture>
+        </article> <!-- end advantages place -->
+
+        <!-- advantages list -->
+        <ul class="advantages__list advantages__list--decorative">
+          <li class="advantages__item">
+            <svg class="advantages__icon" width="77" height="72" role="img" aria-label="Иконка дома">
+              <use xlink:href="img/sprite.svg#accommodation"></use>
+            </svg>
+            <h3 class="advantages__title">Жильё</h3>
+            <p class="advantages__text">Рекомендуем пожить в&nbsp;настоящем мотеле, всё как в&nbsp;кино!</p>
+          </li>
+          <li class="advantages__item advantages__item--unique">
+            <svg class="advantages__icon" width="76" height="72" role="img" aria-label="Иконка гамбургера">
+              <use xlink:href="img/sprite.svg#food"></use>
+            </svg>
+            <h3 class="advantages__title">Еда</h3>
+            <p class="advantages__text">Всегда заказывайте топовый&nbsp;фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
+          </li>
+          <li class="advantages__item">
+            <svg class="advantages__icon" width="76" height="76" role="img" aria-label="Иконка сувенира">
+              <use xlink:href="img/sprite.svg#souvenirs"></use>
+            </svg>
+            <h3 class="advantages__title">Сувениры</h3>
+            <p class="advantages__text">Не&nbsp;только китайского, но&nbsp;и&nbsp;настоящего местного производства!</p>
+          </li>
+        </ul> <!-- end advantages list -->
+      </section> <!-- end advantages -->
+
+      <!-- search -->
+      <section class="search">
+        <h2 class="search__title">Заинтересовались?</h2>
+        <p class="search__text">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;Седоне</p>
+        <a class="search__link" href="#">Поиск гостиницы в седоне</a>
+      </section> <!-- end search -->
+
+      <!-- subscribe -->
+      <section class="subscribe">
+        <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
+        <p class="subscribe__text">Только полезная информация и&nbsp;никакого спама, честное бойскаутское!</p>
+
+        <!-- subscribe form -->
+        <form class="subscribe__form" action="url" method="post">
+          <label class="visually-hidden" for="email-field">E-mail</label>
+          <input class="subscribe__field" type="text" name="email-field" id="email-field" placeholder="Ваш e-mail" required>
+          <button class="subscribe__sign" type="submit">Подписаться</button>
+        </form> <!-- end subscribe form -->
+      </section> <!-- end subscribe -->
+    </main> <!-- end main -->
+
+    <!-- footer -->
+    <footer class="footer container">
+
+      <!-- social -->
+      <ul class="footer__social social">
+        <li class="social__item social__item--vk">
+          <a class="social__link" href="https://vk.com">
+            <svg width="25" height="15" role="img" aria-label="Иконка вконтакте. Ведет на группу в вконтакте">
+              <use xlink:href="img/sprite.svg#vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item social__item--telegram">
+          <a class="social__link" href="https://telegram.org">
+            <svg width="18" height="17" role="img" aria-label="Иконка телеграм. Ведет на группу в телеграмме">
+              <use xlink:href="img/sprite.svg#telegram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item social__item--youtube">
+          <a class="social__link" href="https://youtube.com">
+            <svg width="23" height="18" role="img" aria-label="Иконка ютуб. Ведет на ютуб канал">
+              <use xlink:href="img/sprite.svg#youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul> <!-- end social -->
+
+      <!-- footer number -->
+      <a class="footer__number" href="tel:+78128121212">+7(812)812-12-12</a> <!-- end footer number -->
+
+      <!-- footer logo -->
+      <a class="footer__logo" href="some-site.html">
+        <svg width="115" height="34" role="img" aria-label="Логотип Седоны">
+          <use xlink:href="img/sprite.svg#sedona-logo"></use>
+        </svg>
+      </a>
+    </footer> <!-- end footer -->
+
+    <!-- overlay -->
+    <section class="overlay">
+      <!-- modal -->
+      <article class="overlay__modal modal">
+        <div class="modal__wrapper">
+          <h2 class="modal__title">Поиск гостиницы в Седоне</h2>
+          <button class="modal__close" type="button" aria-label="Закрыть модальное окно"></button>
+
+          <!-- modal form -->
+          <form class="modal__form" action="url" method="post">
+
+            <!-- modal group -->
+            <fieldset class="modal__group">
+              <legend class="visually-hidden">Заполните поля для поиска нужной гостиницы</legend>
+
+              <!-- fields -->
+              <ul class="modal__list fields">
+                <li class="fields__item">
+                  <label class="fields__title" for="checkin-field">Дата заезда:</label>
+                  <input class="fields__field" type="text" name="checkin-field" id="checkin-field" placeholder="27 апреля 2020" required>
+                  <svg class="fields__icon" width="20" height="20" role="img" aria-label="Иконка даты заезда. Отражает визуально дату заезда">
+                    <use xlink:href="img/sprite.svg#date"></use>
+                  </svg>
+                  <p class="fields__text fields__text--error">Мы&nbsp;не&nbsp;можем отправить вас в&nbsp;прошлое.</p>
+                </li>
+                <li class="fields__item">
+                  <label class="fields__title" for="checkout-field">Дата выезда:</label>
+                  <input class="fields__field" type="text" name="checkout-field" id="checkout-field" placeholder="1 сентября 2023" required>
+                  <svg class="fields__icon" width="20" height="20" role="img" aria-label="Иконка даты выезда. Отражает визуально дату выезда">
+                    <use xlink:href="img/sprite.svg#date"></use>
+                  </svg>
+                  <p class="fields__text fields__text--alert">На&nbsp;эти даты есть свободные номера. Пока есть.</p>
+                </li>
+                <li class="fields__item fields__item--half fields__item--adult">
+                  <label class="fields__title" for="adult-field">Взрослые:</label>
+                  <input class="fields__field" type="number" name="adult-field" id="adult-field" placeholder="2" requered>
+
+                  <!-- fields controls -->
+                  <ul class="fields__controls controls">
+                    <li class="controls__control controls__control--minus">
+                      <button class="controls__button" type="button" aria-label="Уменьшить количество взрослых"></button>
+                    </li>
+                    <li class="controls__control controls__control--plus">
+                      <button class="controls__button" type="button" aria-label="Увеличить количество взрослых"></button>
+                    </li>
+                  </ul> <!-- end fields controls -->
+                </li>
+                <li class="fields__item fields__item--half fields__item--children">
+                  <label class="fields__title" for="children-field">Дети:</label>
+                  <input class="fields__field" type="number" name="children-field" id="children-field" placeholder="2" requered>
+
+                  <!-- fields controls -->
+                  <ul class="fields__controls controls controls--children">
+                    <li class="controls__control controls__control--minus">
+                      <button class="controls__button" type="button" aria-label="Уменьшить количество детей"></button>
+                    </li>
+                    <li class="controls__control controls__control--plus">
+                      <button class="controls__button" type="button" aria-label="Увеличить количество детей"></button>
+                    </li>
+                  </ul> <!-- end fields controls -->
+
+                  <!-- fields tooltip -->
+                  <span class="fields__tooltip" tabindex="0">
+                    <svg width="2" height="12" role="img" aria-label="Иконка - подсказка. При наведении выдает дополнительную информацию">
+                      <use xlink:href="img/sprite.svg#info"></use>
+                    </svg>
+
+                    <p class="fields__info">Укажите количество детей, которые будут с&nbsp;вами, возраст которых от&nbsp;6&nbsp;до&nbsp;18&nbsp;лет. Дети до&nbsp;6&nbsp;лет размещаются бесплатно.</p>
+                  </span> <!-- end fields tooltip -->
+                </li>
+              </ul> <!-- end fields -->
+            </fieldset> <!-- end modal group -->
+
+            <button class="modal__find" type="submit">Найти</button>
+          </form> <!-- end modal form -->
+        </div>
+      </article> <!-- end modal -->
+    </section> <!-- end overlay -->
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

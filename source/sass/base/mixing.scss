@@ -1,0 +1,217 @@
+/* reset list */
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// headers
+@mixin h1 {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+}
+
+@mixin h2 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+@mixin h3 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+@mixin h4 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+// buttons
+@mixin bigButton {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+@mixin smallButton {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+@mixin smallRegularButton {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+@mixin smallUppercaseButton {
+  @include smallRegularButton;
+  text-transform: uppercase;
+}
+
+// texts
+@mixin number {
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+@mixin blockText {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+@mixin smallText {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+@mixin contentText {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+@mixin fieldText {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@mixin paginationStates {
+  &:hover {
+    background-color: #4d7fa0;
+  }
+
+  &:focus {
+    background-color: #4d7fa0;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@mixin footerLogoStates {
+  &:hover {
+    fill: #756157;
+  }
+
+  &:focus {
+    fill: #756157;
+  }
+
+  &:active {
+    fill: rgba(117, 97, 87, 0.3);
+  }
+}
+
+@mixin numberStates {
+  &:hover {
+    color: #756157;
+  }
+
+  &:focus {
+    color: #756157;
+  }
+
+  &:active {
+    color: rgba(117, 97, 87, 0.3);
+  }
+}
+
+@mixin socialStates {
+  &:hover {
+    color: #68A2CA;
+  }
+
+  &:focus {
+    color: #68A2CA;
+  }
+
+  &:active {
+    color: rgba(104, 162, 202, 0.3);
+  }
+}
+
+@mixin findStates {
+  &:hover {
+    background-color: #263242;
+  }
+
+  &:focus {
+    background-color: #263242;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@mixin resetState {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    color: $color-white;
+    border: 3px solid #83B3D3;
+  }
+
+  &:active {
+    opacity: 0.3;
+    border-color: transparent;
+  }
+
+  &:disabled {
+    opacity: 0.1;
+  }
+}
+
+@mixin linkState {
+  &:hover {
+    background-color: #615048;
+  }
+
+  &:focus {
+    background-color: #615048;
+  }
+
+  &:active {
+    background-color: #756157;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@mixin buttonState {
+  &:hover {
+    background-color: #121b29;
+  }
+
+  &:focus {
+    background-color: #121b29;
+  }
+
+  &:active {
+    background-color: #82B3D3;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@mixin greenButtonState {
+  &:hover {
+    background-color: #6C9E42;
+  }
+
+  &:focus {
+    background-color: #6C9E42;
+  }
+
+  &:active {
+    background-color: #7DB54F;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}

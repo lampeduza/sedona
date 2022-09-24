@@ -1,0 +1,24 @@
+.rating {
+	display: flex;
+	align-items: center;
+}
+
+.rating__icon {
+	margin-right: 6px;
+
+	&:last-of-type {
+		margin-right: 0;
+	}
+}
+
+.rating__text {
+	@include smallButton;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 400;
+	padding: 8px 8px 9px 8px;
+	min-width: 140px;
+	margin-left: auto;
+	background-color: $form-element-color-2;
+	border-radius: 4px;
+}

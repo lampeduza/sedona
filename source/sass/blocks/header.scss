@@ -1,0 +1,26 @@
+.header {
+	display: flex;
+	align-items: center;
+	position: relative;
+	z-index: 1;
+}
+
+.header__link {
+	margin-right: 30px;
+	position: absolute;
+	top: 0;
+	left: 70px;
+	user-select: none;
+}
+
+.header__button {
+	@include smallButton;
+	text-transform: uppercase;
+	color: $color-white;
+	background-color: $button-color-basic;
+	padding: 8px 34px;
+	border-radius: 4px;
+	margin-left: 33px;
+	user-select: none;
+	@include linkState;
+}

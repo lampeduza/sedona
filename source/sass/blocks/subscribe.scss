@@ -1,0 +1,87 @@
+.subscribe {
+	min-height: 414px;
+	padding-top: 96px;
+	padding-bottom: 104px;
+	background-color: #b0acac;
+	background-image: url('../img/desktop/subscribe-background.jpg');
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: cover, contain;
+	text-align: center;
+	color: $color-white;
+
+	@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image:
+    	url('../img/desktop/subscribe-background@2x.webp')
+  }
+
+	&--theme-white {
+		background-image: none;
+		background-color: $color-white;
+
+		.subscribe__title {
+			color: $color-black;
+		}
+
+		.subscribe__text {
+			color: #333333;
+		}
+
+		.subscribe__field {
+			background-color: $form-element-color-2;
+			color: $color-black;
+
+			&::placeholder {
+				color: $color-black;
+			}
+		}
+	}
+}
+
+.subscribe__title {
+	@include h2;
+	text-transform: uppercase;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+.subscribe__text {
+	@include contentText;
+	width: 475px;
+	margin: 0 auto;
+	margin-bottom: 54px;
+}
+
+.subscribe__form {
+	display: flex;
+	justify-content: center;
+}
+
+.subscribe__field {
+	@include fieldText;
+	color: $color-black;
+	width: 452px;
+	padding: 14px 20px;
+	border: none;
+	border-radius: 4px 0px 0px 4px;
+	user-select: none;
+
+	&::placeholder {
+		@include fieldText;
+		color: $color-black;
+	}
+}
+
+.subscribe__sign {
+	@include bigButton;
+	// Для лучшей доступности изменил цвет фона
+	background-color: #5093be;
+	color: $color-white;
+	text-transform: uppercase;
+	border: none;
+	padding: 8px 50px;
+	border-radius: 0px 4px 4px 0px;
+	cursor: pointer;
+	user-select: none;
+	@include buttonState;
+}

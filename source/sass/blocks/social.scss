@@ -1,0 +1,19 @@
+.social {
+	@include reset-list;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.social__item {
+	margin-right: 26px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.social__link {
+	display: flex;
+
+	// states
+}

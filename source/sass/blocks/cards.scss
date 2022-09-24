@@ -1,0 +1,102 @@
+.cards {
+	@include reset-list;
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 14px;
+	margin-bottom: 40px;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.cards__card {
+	display: flex;
+	flex-direction: column;
+	width: 340px;
+	padding: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	border: 1px solid #e6e6e6;
+	border-radius: 4px;
+	user-select: none;
+
+	&:nth-child(3n) {
+		margin-right: 0;
+	}
+}
+
+.cards__title {
+	@include h3;
+	margin: 0;
+	margin-bottom: 16px;
+}
+
+.cards__picture {
+	display: flex;
+	order: -1;
+	margin-bottom: 16px;
+}
+
+.cards__content {
+	width: 100%;
+	display: flex;
+	margin-bottom: 16px;
+}
+
+.cards__text {
+	@include blockText;
+	font-weight: 400;
+	margin: 0;
+
+	&--price {
+		margin-left: auto;
+	}
+}
+
+.cards__navigation {
+	@include reset-list;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.cards__item {
+	margin-bottom: 16px;
+}
+
+.cards__link {
+	text-align: center;
+	border-radius: 4px;
+	display: block;
+	@include smallButton;
+	color: $color-white;
+	text-transform: uppercase;
+	padding: 8px;
+	min-width: 140px;
+
+	&--disabled {
+		background-color: #e5e5e5;
+    color: $color-white;
+	}
+
+	&--more {
+		background-color: $button-color-basic;
+		@include linkState;
+	}
+}
+
+.cards__button {
+	border: none;
+	background-color: #2a4467;
+	cursor: pointer;
+	@include buttonState;
+
+	&--disabled {
+		background-color: #e5e5e5;
+    color: $color-white;
+	}
+
+	&--added {
+		background-color: #7DB54F;
+		@include greenButtonState;
+	}
+}

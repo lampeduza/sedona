@@ -1,0 +1,95 @@
+.modal {
+	width: 717px;
+	min-height: 576px;
+	border-radius: 30px;
+	background-color: $color-white;
+	position: fixed;
+	z-index: 5;
+	top: 396px;
+	left: 50%;
+	margin-left: calc(-717px / 2);
+}
+
+.modal__wrapper {
+	padding: 64px 70px;
+	position: relative;
+}
+
+.modal__title {
+	@include h2;
+	text-transform: uppercase;
+	margin: 0;
+	margin-bottom: 64px;
+	max-width: 500px;
+}
+
+.modal__group {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.modal__close {
+	border: none;
+	background-color: $form-element-color-2;
+	width: 52px;
+	height: 52px;
+	border-radius: 50%;
+	cursor: pointer;
+	position: absolute;
+	right: 52px;
+	top: 64px;
+
+	&:hover {
+		background-color: #e6e6e6;
+	}
+
+	&:focus {
+		background-color: #e6e6e6;
+		outline: 3px solid #83B3D3;
+	}
+
+	&:active {
+		background-color: #e6e6e6;
+		outline: none;
+	}
+
+	&::before,
+	&::after {
+		content: '';
+		width: 2px;
+		height: 14px;
+		background-color: $color-black;
+		position: absolute;
+		top: 20px;
+		left: 26px;
+	}
+
+	&:active {
+		&::before,
+		&::after {
+			opacity: 0.3;
+		}
+	}
+
+	&::before {
+		transform: rotate(45deg);
+	}
+
+	&::after {
+		transform: rotate(135deg);
+	}
+}
+
+.modal__find {
+	@include h4;
+	text-transform: uppercase;
+	padding: 18px;
+	border: none;
+	border-radius: 10px;
+	width: 100%;
+	text-align: center;
+	background-color: $color-additional;
+	color: $color-white;
+	cursor: pointer;
+}

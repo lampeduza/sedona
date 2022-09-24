@@ -1,0 +1,40 @@
+.promo {
+	display: block;
+	background-color: $color-white;
+	background-image: url('../img/desktop/promo-background.jpg');
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+	background-size: 100% auto;
+	min-height: 767px;
+	padding-bottom: 282px;
+	position: relative;
+
+	@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url('../img/desktop/promo-background@2x.webp');
+  }
+}
+
+.promo__content {
+	position: absolute;
+	top: 554px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.promo__title {
+	@include h2;
+	margin: 0 auto 25px auto;
+	text-align: center;
+	text-transform: uppercase;
+	width: 620px;
+	position: relative;
+	z-index: 2;
+}
+
+.promo__text {
+	@include contentText;
+	text-align: center;
+	margin: 0;
+	position: relative;
+	z-index: 2;
+}

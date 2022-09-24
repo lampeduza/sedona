@@ -1,0 +1,32 @@
+.sort {
+	display: flex;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+.sort__title {
+	@include h2;
+	text-transform: uppercase;
+	margin: 0 auto 0 0;
+}
+
+.sort__content {
+	width: max-content;
+	border: 2px solid $form-element-color-1;
+	cursor: pointer;
+	margin-right: 70px;
+	user-select: none;
+}
+
+.sort__option {
+	padding: 14px 20px;
+}
+
+.sort__text {
+	@include blockText;
+	margin-right: 95px;
+}
+
+.sort__list {
+	display: none;
+}
