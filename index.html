@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Седона - небольшой городок в Аризоне, заслуживающий большего!">
     <title>Седона | Главная страница</title>
     <link rel="apple-touch-icon" href="img/favicon/favicon.png">
@@ -210,14 +210,13 @@
     <!-- overlay -->
     <section class="overlay">
       <!-- modal -->
-      <article class="overlay__modal modal">
+      <div class="overlay__modal modal">
         <div class="modal__wrapper">
           <h2 class="modal__title">Поиск гостиницы в Седоне</h2>
           <button class="modal__close" type="button" aria-label="Закрыть модальное окно"></button>
 
           <!-- modal form -->
           <form class="modal__form" action="url" method="post">
-
             <!-- modal group -->
             <fieldset class="modal__group">
               <legend class="visually-hidden">Заполните поля для поиска нужной гостиницы</legend>
@@ -242,7 +241,7 @@
                 </li>
                 <li class="fields__item fields__item--half fields__item--adult">
                   <label class="fields__title" for="adult-field">Взрослые:</label>
-                  <input class="fields__field" type="number" name="adult-field" id="adult-field" placeholder="2" requered>
+                  <input class="fields__field" type="number" name="adult-field" id="adult-field" placeholder="2" required>
 
                   <!-- fields controls -->
                   <ul class="fields__controls controls">
@@ -256,7 +255,7 @@
                 </li>
                 <li class="fields__item fields__item--half fields__item--children">
                   <label class="fields__title" for="children-field">Дети:</label>
-                  <input class="fields__field" type="number" name="children-field" id="children-field" placeholder="2" requered>
+                  <input class="fields__field" type="number" name="children-field" id="children-field" placeholder="2" required>
 
                   <!-- fields controls -->
                   <ul class="fields__controls controls controls--children">
@@ -269,13 +268,13 @@
                   </ul> <!-- end fields controls -->
 
                   <!-- fields tooltip -->
-                  <span class="fields__tooltip" tabindex="0">
+                  <div class="fields__tooltip" tabindex="0">
                     <svg width="2" height="12" role="img" aria-label="Иконка - подсказка. При наведении выдает дополнительную информацию">
                       <use xlink:href="img/sprite.svg#info"></use>
                     </svg>
 
                     <p class="fields__info">Укажите количество детей, которые будут с&nbsp;вами, возраст которых от&nbsp;6&nbsp;до&nbsp;18&nbsp;лет. Дети до&nbsp;6&nbsp;лет размещаются бесплатно.</p>
-                  </span> <!-- end fields tooltip -->
+                  </div> <!-- end fields tooltip -->
                 </li>
               </ul> <!-- end fields -->
             </fieldset> <!-- end modal group -->
@@ -283,7 +282,7 @@
             <button class="modal__find" type="submit">Найти</button>
           </form> <!-- end modal form -->
         </div>
-      </article> <!-- end modal -->
+      </div> <!-- end modal -->
     </section> <!-- end overlay -->
 
     <script src="js/main.js"></script>
